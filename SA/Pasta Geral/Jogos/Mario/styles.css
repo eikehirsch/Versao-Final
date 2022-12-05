@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.game-board{
+    width: 100%;
+    height: 63.3%;
+    border-bottom: 10px solid rgb(11, 214, 11);
+    margin: 0 auto;
+    position: absolute;
+    overflow: hidden;
+    background: linear-gradient(#87CEEB, #E0F6FF);
+}
+
+#pointsContainerMain {
+    position: absolute;
+    top: 10%;
+    right: 40%;
+
+    height: 20%;
+    width: 20%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#pointsContainer {
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: xx-large;
+
+    border-radius: 50px 0px 0px 20px;
+    box-shadow: 0 0 1em gold, 0 0 1em red;
+
+    background: #f3ff4d;
+
+}
+
+#hsContainer {
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: xx-large;
+
+    border-radius: 0px 20px 50px 0px;
+    box-shadow: 0 0 1em gold, 0 0 1em red;
+
+    background: #ffb937;
+}
+
+#namePoints {
+    top: 0;
+}
+
+#points {
+    top: 20%;
+}
+
+.pipe{
+    position: absolute;
+    bottom: -7px;
+    width: 80px;
+    right: -80px;
+    animation: pipe-animation 2s infinite linear;
+
+}
+
+.ground{
+    position: absolute;
+    height: 38%;
+    width: 100%;
+    top: 62%;
+}
+
+.mario{
+    position: absolute;
+    width: 150px;
+    bottom: 0;
+}
+
+.bird {
+    position: absolute;
+    right: -70px;
+    width: 60px;
+    animation: bird 3s infinite linear 3s;
+}
+
+.jump{
+    animation: jump 500ms ease-out;
+}
+
+.clouds{
+    position: absolute;
+    z-index: 4;
+    width: 300px;
+    top: 80px;
+    animation: clouds-animation 20s infinite linear;
+}
+
+.clouds2{
+    position: absolute;
+    z-index: 3;
+    width: 500px;
+    top: 10px;
+    animation: clouds-animation2 30s infinite linear;
+}
+
+.clouds3{
+    position: absolute;
+    z-index: 2;
+    width: 700px;
+    top: 17;
+    animation: clouds-animation3 50s infinite linear;
+}
+
+.clouds4 {
+    position: absolute;
+    z-index: 1;
+    width: 900px;
+    top: 40px;
+    animation: clouds-animation3 60s infinite linear;
+}
+
+
+
+@keyframes clouds-animation{
+    from{
+        right: -550px;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes clouds-animation2{
+    from{
+        right: -1100px;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes clouds-animation3{
+    from{
+        right: -1650px;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes pipe-animation{
+
+    from{
+
+        right: 0;
+    }
+
+    to{
+        right: 100%;
+
+    }
+
+}
+
+@keyframes jump {
+    0%{
+        bottom: 0;
+    }
+
+    40%{
+        bottom: 200px;
+    }
+
+    50%{
+        bottom: 200px;
+    }
+
+    60%{
+        bottom: 200px;
+    }
+
+    100%{
+        bottom: 0%
+    }
+}
+
+/* animação passaro */
+@keyframes bird {
+    0% {
+        bottom: 20px;
+    }
+    10%{
+        bottom: 20px;
+    }
+    20%{
+        bottom: 200px;
+    }
+    30%{
+        bottom: 200px;
+    }
+    40%{
+        bottom: 20px;
+    }
+    50% {
+        bottom: 20px;
+    }
+    60%{
+        bottom: 200px;
+    }
+    70%{
+        bottom: 200px;
+    }
+    80%{
+        bottom: 20px;
+    }
+    90%{
+        bottom: 20px;
+    }
+
+    100% {
+        bottom: 20px;
+    }
+
+    from {
+        right: -550px;
+    }
+
+    to {
+        right: 100%;
+    }
+
+}

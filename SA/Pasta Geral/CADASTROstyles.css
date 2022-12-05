@@ -1,0 +1,110 @@
+
+input, label{
+    display: block;
+    width: 100%;
+    align-items: center;
+}
+
+
+input:focus, label:focus{
+    outline: none;
+}
+
+
+/*form*/
+
+#cadastro-container{
+    display: flex;
+    border: 2px solid black;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(229, 201, 216);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    gap: 6px;
+}
+
+.full-box, .half-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6px;
+}
+
+#cadastro-container h1{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+}
+/*
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+*/
+
+.full-box{
+    flex: 1 1 100%;
+    position: relative;
+}
+
+
+.half-box{
+    flex: 1 1 45%;
+    position: relative;
+}
+
+
+label{
+    font-weight: bold;
+
+}
+
+.button_div{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.login-button{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    box-shadow: 2px 2px black;
+}
+
+.login-button:active{
+    box-shadow: -2px -2px black;
+}
+
+input[type="submit"]{
+    background-color: #085588;
+    color: antiquewhite;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.template{
+    display: none;
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(69, 135, 197);
+    transition: .3s;
+
+}

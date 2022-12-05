@@ -1,0 +1,90 @@
+textarea:focus, input:focus{
+    outline: none;
+
+}
+
+a:hover{
+    color: #085588;
+}
+
+/*container login*/
+
+#login-container{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(229, 201, 216);
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.inputs {
+    text-align: center;
+    font-size: 10px;
+    width: 80%;
+}
+
+.logar {
+    font-size: 24px;
+    margin-bottom: 40px;
+    padding: 0 !important;
+}
+
+.button_div{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.login-button-login{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    box-shadow: 2px 2px black;
+}
+
+.login-button:active{
+    box-shadow: -2px -2px black;
+}
+
+#forgot-pass{
+    text-align: right;
+    display: block;
+}
+
+input[type="submit"]{
+    background-color: #085588;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button-register {
+    cursor: pointer;
+    background-color: white;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 2px 2px;
+    margin: 10px;
+}
+.button-register:active {
+    box-shadow: -2px -2px;
+}

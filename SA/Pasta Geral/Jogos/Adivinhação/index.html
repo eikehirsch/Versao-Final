@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Adivinhe a Palavra</title>
+</head>
+
+<body>
+
+<div id="container">
+
+    <div id="points"></div>
+
+    <div id="header">
+
+        <p id="pHeader">Digite um número de 1 a 5 e pressione COMEÇAR</p>
+        <input id="raffleNumber"></input>
+        <button id="startButton" onclick="startButton()">COMEÇAR</button>
+
+    </div>
+
+    <div id="main">
+
+        <input type="text" id="letra1"></input>
+        <input type="text" id="letra2"></input>
+        <input type="text" id="letra3"></input>
+        <input type="text" id="letra4"></input>
+        <input type="text" id="letra5"></input>
+
+    </div>
+
+
+    <div id="footer">
+        <p id="pFooter">Digite uma letra e pressione TENTAR</p>
+        <input id="inputTry"></input>
+        <button id="buttonTry" onclick="tentar()">TENTAR</button>
+    </div>
+
+
+</div>
+
+
+<script src="javascript.js"></script>
+</body>
+
+</html>

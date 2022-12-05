@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+.cadastros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    background-image: url("alterarDados.jpg");
+    background-size: cover; /* or contain depending on what you want */
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 40px;
+}
+
+#container{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(229, 201, 216);
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+#container h1{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+}
+
+h1{
+    font-family: 'Press Start 2P', cursive;
+    padding: 20PX;
+}
+
+.full-box{
+    flex: 1 1 100%;
+    position: relative;
+
+}
+
+
+.half-box{
+    flex: 1 1 45%;
+    position: relative;
+}
+
+
+label{
+    font-weight: bold;
+    font-size: 1.3em;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+input{
+    border: 2px solid rgb(17, 16, 15);
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px black;
+}
+
+
+input:focus{
+    border-color: rgb(155, 72, 127);
+}
+
+.button_div{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.login-button{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    box-shadow: 2px 2px black;
+    width: 250px;
+}
+
+.login-button:active{
+    box-shadow: -2px -2px black;
+}
+
+input[type="submit"]{
+    background-color: #085588;
+    color: antiquewhite;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.template{
+    display: none;
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(69, 135, 197);
+    transition: .3s;
+
+}

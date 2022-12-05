@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+
+    <script defer src="javascript.js"></script>
+
+    <title>Jogo da Memória</title>
+</head>
+
+<body>
+
+
+<main class="main">
+    <audio controls autoplay class="audio" src="Theme.mp3" src="cartaPar.mp3" id="player" hidden></audio>
+    <header class="header">
+        <span class="player"></span>
+        <span class="titulo">Tempo:
+             <span class="timer">00</span>
+        </span>
+        <div class="radio-div">
+            <div class="div__player">
+                <span>Música:</span>
+                <button class="botoes__player" onclick="document.getElementById('player').play()">Play</button>
+                <button class="botoes__player" onclick="document.getElementById('player').pause()">Pause</button>
+                <button class="botoes__player" onclick="document.getElementById('player').volume += 0.1">Vol +</button>
+                <button class="botoes__player" onclick="document.getElementById('player').volume -= 0.1">Vol -</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="grid"></div>
+</main>
+
+</body>
+
+</html>

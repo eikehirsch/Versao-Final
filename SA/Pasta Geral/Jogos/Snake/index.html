@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake></title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+<div id="container">
+
+    <div id="box">
+
+        <div id="menu">
+            <label id="dificuldade"> Selecione a dificuldade</label>
+            <button onclick="facil()">Fácil</button>
+            <button onclick="medio()">Médio</button>
+            <button onclick="dificil()">Difícil</button>
+            Pontuação:<span id="pontuacao"></span>
+            Recorde:<span id="recorde"></span>
+        </div>
+
+        <div id="jogo">
+            <canvas id="stage" width="800" height="800"></canvas>
+        </div>
+
+        <div id="nada">
+
+        </div>
+    </div>
+
+</div>
+
+
+<script src="javascript.js"></script>
+</body>
+</html>
